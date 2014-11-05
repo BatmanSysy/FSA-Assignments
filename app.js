@@ -21,12 +21,22 @@ server.route({
 
 server.route({
     method: 'GET',
-    path: '/getdata',
+    path: '/portfolio',
     handler: function (request, reply) {
-        reply({
-            "name": "Meng",
-            "nickname": "SamaDoi+"
-        });
+        reply([
+            {
+                "href": "#portfolioModal2",
+                "src": "img/portfolio/cake.png"
+            },
+            {
+                "href": "#portfolioModal4",
+                "src": "img/portfolio/game.png"
+            },
+            {
+                "href": "#portfolioModal6",
+                "src": "img/portfolio/submarine.png"
+            }
+        ]);
     }
 });
 

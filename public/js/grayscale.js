@@ -176,3 +176,34 @@ function init() {
         icon: image
     });
 }
+
+
+// jQuery for fetch Portfolio data
+$(function() {
+    var portfolioAPI = "http://localhost:8000/portfolio";
+    $.getJSON(portfolioAPI, {
+        format: "json"
+    })
+    .done(function( data ) {
+
+        $.each( data, function( i, item ) {
+
+            var div = $( "<div />", { "class": "col-sm-4 portfolio-item" });
+
+            var a = $( "<a />", { 
+                "href": item.href,
+                "class": "portfolio-link", 
+                "data-toggle": "modal",
+                "html": "<div class='caption'><div class='caption-content'><i class='fa fa-search-plus fa-3x'></i></div></div>"
+            });
+
+            var img = $( "<img>", { "src": item.src, "class": "img-responsive" });
+                        
+            $(img).appendTo(a);
+            $(a).appendTo(div);
+            $(div).appendTo( "#portfolio-list" );
+
+        });
+    });
+});
+
