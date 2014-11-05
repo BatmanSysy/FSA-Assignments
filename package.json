@@ -1,0 +1,32 @@
+{
+  "name": "FSA-Assignments",
+  "description": "The Full-Stack Academy (FSA)",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://batmansysy@github.com/BatmanSysy/FSA-Assignments.git"
+  },
+  "keywords": [
+    "FSA",
+    "Assignments"
+  ],
+  "author": "Boonyarit Wiriyagulpat",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/BatmanSysy/FSA-Assignments/issues"
+  },
+  "homepage": "https://github.com/BatmanSysy/FSA-Assignments",
+  "dependencies": {
+    "hapi": "~7.2.0",
+    "handlebars": "~2.0.0",
+    "path": "~0.4.9"
+  },
+  "devDependencies": {
+    "bower": "~1.3.12"
+  }
+}
