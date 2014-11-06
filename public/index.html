@@ -51,22 +51,11 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    {{#each menus}}
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="{{href}}">{{name}}</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Download</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#map">Map</a>
-                    </li>
-
+                    {{/each}}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
