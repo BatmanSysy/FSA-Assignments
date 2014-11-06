@@ -15,7 +15,31 @@ server.route({
     method: 'GET',
     path: '/',
     handler: function (request, reply) {
-        reply.view('index');
+
+        reply.view('index', {
+            menus: [
+                {
+                    "name": "About",
+                    "href": "#about"
+                },
+                {
+                    "name": "Portfolio",
+                    "href": "#portfolio"
+                },
+                {
+                    "name": "Download",
+                    "href": "#download"
+                },
+                {
+                    "name": "Contact",
+                    "href": "#contact"
+                },
+                {
+                    "name": "Map",
+                    "href": "#map"
+                }
+            ]
+        });
     }
 });
 
