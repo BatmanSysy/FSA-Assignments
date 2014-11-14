@@ -180,7 +180,7 @@ function init() {
 
 // jQuery for fetch Portfolio data
 $(function() {
-    var portfolioAPI = "http://localhost:8000/portfolio";
+    var portfolioAPI = "/portfolio";
     $.getJSON(portfolioAPI, {
         format: "json"
     })

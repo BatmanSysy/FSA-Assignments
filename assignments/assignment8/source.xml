@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+  <post>
+    <name data-type='string' data-size='255'>Ace</name>
+    <age data-type='integer' >20</age>
+  </post>
+  <post>
+    <name data-type='string' data-size='255'>Base</name>
+    <age data-type='integer'>30</age>
+  </post>
+</doc>
